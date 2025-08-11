@@ -47,27 +47,7 @@ The project integrates a modern stack of AI and development tools to deliver a r
 
 ---
 
-## 📂 Project Structure
 
-The repository is organized to separate concerns, making it easy to understand, maintain, and extend.
-
-```plaintext
-cold-email-generator/
-│
-├── app.py                  # Main Streamlit application file
-├── requirements.txt        # Python dependencies
-├── config/                 # Stores configuration (e.g., model paths, API keys)
-├── data/                   # Your domain-specific data for context (e.g., .txt, .pdf)
-├── modules/
-│   ├── data_ingestion.py   # Handles loading and processing of reference data
-│   ├── embeddings.py       # Manages creating embeddings and storing in ChromaDB
-│   ├── generator.py        # Contains the LLM-powered email generation logic
-│   ├── retriever.py        # Responsible for querying ChromaDB for relevant context
-│   └── utils.py            # Common helper functions and utilities
-└── README.md               # Project documentation
-```
-
----
 
 ## ⚙️ Installation & Setup
 
@@ -96,17 +76,12 @@ It's recommended to use a virtual environment to manage dependencies.
     venv\Scripts\activate
     ```
 
-### 3. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Configure the Application
+### 3. Configure the Application
 Create and configure your settings in the `config/` directory or a `.env` file as required by the application setup. This includes specifying the path to your Llama 3 model.
 
-### 5. Run the Application
+### 4. Run the Application
 ```bash
-streamlit run app.py
+streamlit run main.py
 ```
 Open your browser and navigate to `http://localhost:8501` to start using the Cold Email Generator.
 
