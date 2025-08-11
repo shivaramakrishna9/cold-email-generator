@@ -1,4 +1,4 @@
-Cold Email Generator – README
+#Cold Email Generator – README
 📌 Project Overview
 Cold Email Generator is an end-to-end generative AI application that helps software and AI service companies craft personalized and effective cold emails to reach potential clients.
 
